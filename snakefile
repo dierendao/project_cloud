@@ -40,7 +40,7 @@ rule fastqc_init:
                 "results/fastqc_init/{sample}_fastqc.html",
                 "results/fastqc_init/{sample}_fastqc.zip"
         conda:
-                "fastqc_init.yaml"
+                "env.yaml"
         threads: 2
         shell:
                 """
@@ -82,7 +82,7 @@ rule fastqc_post:
         log:
                 "results/fastqc_post/{sra}_fastqc.log"
         conda:
-                "fastqc_post.yaml"
+                "env.yaml"
         threads: 8
         shell:
                 """
@@ -98,7 +98,7 @@ rule multiqc:
         log:
                 "results/qc/{sra}_multiqc.out"
         conda:
-                "multiqc.yaml"
+                "env.yaml"
         threads:
                 8
         shell:
@@ -118,7 +118,7 @@ rule bowtie2:
         params:
                 index="/data/mydatalocal/atacseq/databank/bowtie2/all"
         conda:
-                "bowtie2.yaml"
+                "env.yaml"
         threads: 8
         shell:
                 "bowtie2 --threads {threads} --very-sensitive "
@@ -136,7 +136,7 @@ rule picard:
         params:
                 extra="REMOVE_DUPLICATES=true"
         conda:
-                "picard.yaml"
+                "env.yaml"
         threads: 8
         shell:
                 "java -jar picard.jar MarkDuplicates --threads {threads} " 
@@ -158,7 +158,7 @@ rule  GC_remove:
                 genome="/home/users/shared/databanks/bio/ncbi/genomes/Mus_musculus/Mus_musculus_GRCm38.p6/Mus_musculus_2020-7-9/2bit/all.2bit",
                 freq="results/GC_remove/{sra}_freq.txt"
         conda:
-                "deeptools.yaml"
+                "env.yaml"
         threads:
                 8
         shell:
@@ -185,7 +185,7 @@ rule deeptools:
         log:
                "results/npz/{sra}_deeptool.out" 
         conda:
-               "deeptools.yaml"
+               "env.yaml"
         threads:
                 8
         shell:
@@ -207,7 +207,7 @@ rule deeptools_correlation:
         threads:
                 8
         conda:
-               "deeptools.yaml"        
+               "env.yaml"        
         shell:
                 "plotCorrelation --threads {threads} "
                 "-in {input} "
