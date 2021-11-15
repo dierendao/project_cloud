@@ -1,0 +1,13 @@
+samples:
+  ss_50k_0h_R1_1: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_0h_R1_1.fastq.gz
+  ss_50k_0h_R1_2: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_0h_R1_2.fastq.gz
+  ss_50k_0h_R2_1: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_0h_R2_1.fastq.gz
+  ss_50k_0h_R2_2: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_0h_R2_2.fastq.gz
+  ss_50k_0h_R3_1: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_0h_R3_1.fastq.gz
+  ss_50k_0h_R3_2: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_0h_R3_2.fastq.gz
+  ss_50k_24h_R1_1: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_24h_R1_1.fastq.gz
+  ss_50k_24h_R1_2: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_24h_R1_2.fastq.gz
+  ss_50k_24h_R2_1: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_24h_R2_1.fastq.gz
+  ss_50k_24h_R2_2: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_24h_R2_2.fastq.gz
+  ss_50k_24h_R3_1: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_24h_R3_1.fastq.gz
+  ss_50k_24h_R3_2: /home/ubuntu/data/mydatalocal/atacseq/subset/ss_50k_24h_R3_2.fastq.gz
